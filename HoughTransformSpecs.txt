@@ -1,0 +1,27 @@
+              Project: Hough Transform
+              
+You are to implement the Hough Transform for line detection algorithm.  
+
+  Abstract: 
+
+Hough Transform is the best Line Detection Algorithm (self-driving cars use it).
+There are two spaces used in Hough Transform: a 2D image space and a 2D Hough Space.
+In the 2D image space, one axis is Row, the other axis is Col. Each “cell” of the image
+space represents a single pixel.  
+
+In the Hough Space, one axis is Angle and the other axis is Distance (the “orthogonal
+distance” from the origin to the lines. Each “cell” of Hough Space represents a “line”
+(with the count of co-linear object pixels on the image space.)
+
+Hough Transform is a mapping from “lines” (on the image) to points (on the Hough Space).
+All object pixels located on the same line (i.e. co-linear pixels) are mapped (voted) onto
+a single bucket [angle, distance] in the Hough Space, where angle is the angle of the line
+passing thru these co-linear pixels and distance is the orthogonal distance from the origin
+to that line.
+
+
+I. inFile(args[0] / argv[1]): a binary image 
+
+II. - outFile1 (args[1] / argv[2]): using prettyPrint for visual 
+    - outFile_2 (args[2] /  / argv[3]): // the final result of your HoughAry with header information
+	
